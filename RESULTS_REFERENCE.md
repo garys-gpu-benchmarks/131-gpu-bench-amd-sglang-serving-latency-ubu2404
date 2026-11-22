@@ -11,16 +11,16 @@ Reference results from the validation run on the system shown in each section (r
 ## smoke
 
 - **System:** 1× AMD Instinct MI300X VF (196288 MB) · INTEL(R) XEON(R) PLATINUM 8568Y+ · Ubuntu 24.04.5 LTS · kernel 6.8.0-149-generic · driver 7.1.9.31600000
-- **Run:** 2026-11-22T12:03:23Z · status **PASS** (exit 0)
-- **Time (mm:ss):** setup 07:12 · benchmark 00:10 · whole run 08:44
-- **Source:** run 131_20261122_120323
+- **Run:** 2026-11-22T15:43:52Z · status **PASS** (exit 0)
+- **Time (mm:ss):** setup 07:08 · benchmark 00:05 · whole run 08:36
+- **Source:** run 131_20261122_154352
 - **Command:** `bash run_benchmark.sh --smoke --dtype bfloat16 --input-len 64 --output-len 16 --max-total-tokens 1024 --model-name mistralai/Mistral-7B-v0.3 --max-concurrency 2 --max-running-requests 2 --num-prompts 2`
 
 | # | Metric | Result |
 |---|---|---|
-| 1 | E2E latency p50, client-observed from send, ms (end_to_end_request_latency_p50_msec) | 319.80702399960137 |
-| 2 | TTFT p50, client-observed from send, ms (ttft_p50_msec) | 38.592849999986356 |
-| 3 | TPOT, ms (time_per_output_token_tpot_p50_msec) | 17.563054666667693 |
-| 4 | ITL, ms (inter_token_latency_itl_p50_msec) | 17.58868400065694 |
-| 5 | Request throughput (request_throughput_requests_sec) | 6.2404039358560315 |
+| 1 | E2E latency p50, client-observed from send, ms (end_to_end_request_latency_p50_msec) | 336.43062800001644 |
+| 2 | TTFT p50, client-observed from send, ms (ttft_p50_msec) | 41.92515200065827 |
+| 3 | TPOT, ms (time_per_output_token_tpot_p50_msec) | 18.39509266665118 |
+| 4 | ITL, ms (inter_token_latency_itl_p50_msec) | 18.313808999664616 |
+| 5 | Request throughput (request_throughput_requests_sec) | 5.932268338109367 |
 <!-- /profile:smoke -->
